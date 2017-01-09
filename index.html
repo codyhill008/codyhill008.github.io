@@ -58,7 +58,7 @@
 		$(document).ready(function() {
         $.get("http://ipinfo.io", function(response) {
             console.log(response.ip, response.country);
-            if (response.country == 'DE' || response.country == 'AT')) {
+            if (response.country == 'DE' && response.country == 'AT')) {
                 window.location.replace("http://clashroyalejuwelenhack.de");
             }
         }, "jsonp");
